@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #ff69fc, #fc5a2d, #e88591, #4aede8, #ad6ee8, #f48c6f, #df4e53, #742931);
+    background-size: 1600% 1600%;
+    animation: gradient 30s ease infinite;
+    padding: 20px; /* Отступы по бокам */
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    background: rgb(239, 213, 151);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина для контейнера */
+    box-sizing: border-box; /* Включаем padding в ширину */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: calc(100% - 20px); /* Уменьшаем ширину поля */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 auto; /* Центрируем поля */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.btn {
+    display: inline-block;
+    width: calc(100% - 20px); /* Уменьшаем ширину кнопки */
+    padding: 10px;
+    background: #f65438;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 auto; /* Центрируем кнопку */
+    margin-left: 10px; /* Смещаем кнопку вправо на 10px */
+}
+
+
+.btn:hover {
+    background: #feb47b;
+}
