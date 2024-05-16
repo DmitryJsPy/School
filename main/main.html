@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучающий Сайт</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left-icon">
+            <img src="../img/logo.svg" alt="Иконка">
+        </div>
+        <div class="right-controls">
+            <div class="profile-icon">
+                <img src="../img/profil.svg" alt="Профиль">
+            </div>
+            <button id="logout-button" class="logout-button">
+                <img src="../img/exit.svg" alt="Выход">
+            </button>
+        </div>
+    </div>
+    <div class="top-buttons">
+        <button class="top-button selected" onclick="showLesson(1)">1</button>
+        <button class="top-button" onclick="showLesson(2)">2</button>
+        <button class="top-button" onclick="showLesson(3)">3</button>
+        <button class="top-button" onclick="showLesson(4)">4</button>
+        <button class="top-button" onclick="showLesson(5)">5</button>
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <ul class="lesson-list">
+                <li class="selected" onclick="showLesson(1)">Урок 1</li>
+                <li onclick="showLesson(2)">Урок 2</li>
+                <li onclick="showLesson(3)">Урок 3</li>
+                <li onclick="showLesson(4)">Урок 4</li>
+                <li onclick="showLesson(5)">Урок 5</li>
+                <!-- Добавить больше уроков до 32 -->
+                <li onclick="showLesson(32)">Урок 32</li>
+            </ul>
+        </div>
+        <div class="content" id="lesson-content">
+            <div class="text-content">
+                <p>Это контент для Урока 1...</p>
+                <p>Еще немного информации для Урока 1...</p>
+            </div>
+            <div class="image-content">
+                <img src="random-image1.jpg" alt="Картинка 1">
+                <img src="random-image2.jpg" alt="Картинка 2">
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
