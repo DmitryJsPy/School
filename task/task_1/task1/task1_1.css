@@ -1,0 +1,47 @@
+/* Специфические стили для Задания 1 в Уроке 1 */
+#lesson-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.video-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 860px; /* Увеличиваем максимальную ширину */
+    display: flex;
+    justify-content: center;
+}
+
+.video-content iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.text-content {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+}
+
+.code-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.code-content img {
+    max-width: 45%;
+    height: auto;
+    margin: 10px;
+    border: 2px solid red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
