@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ffccff, #ccffff, #ccffcc, #ffffcc, #ccccff);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+
+.left-icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.right-controls {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.logout-button img {
+    height: 40px;
+    width: 40px;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: #444;
+}
+
+.top-button {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.top-button.selected {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.top-button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 120px); /* Высота минус высота шапки и верхних кнопок */
+}
+
+.sidebar {
+    width: 220px; /* Увеличенная ширина боковой панели */
+    background: #222;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    margin: 10px 10px; /* Отступы справа и слева */
+    border: 1px solid #444;
+    border-radius: 8px; /* Закругленные углы */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Добавляем плавные переходы */
+}
+
+.sidebar li.selected {
+    background-color: #555;
+    transform: scale(1.05); /* Небольшое увеличение */
+}
+
+.sidebar li:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Небольшое увеличение при наведении */
+}
+
+.content {
+    flex: 1;
+    padding: 20px 0; /* Убираем отступы слева и справа */
+    overflow-y: auto;
+    box-sizing: border-box; /* Учитывает padding в ширине элемента */
+    margin-left: 10px; /* Отступ от боковой панели */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
